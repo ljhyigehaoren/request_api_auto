@@ -1,0 +1,23 @@
+{
+  "readbook_login009": {
+    "url":"http://127.0.0.1:8000/login/",
+    "headers": {"Content-Type": "application/json"},
+    "data":{"account": "", "password": ""},
+    "expect_result": {"status": 2001, "msg": "用户名或密码错误"},
+    "status_code":200
+  },
+   "readbook_login010": {
+    "url":"http://127.0.0.1:8000/login/",
+    "headers": {"Content-Type": "application/json"},
+    "data":{"account": "", "password": "123456"},
+    "expect_result": {"status": 2001, "msg": "用户名或密码错误"},
+    "status_code":200
+  },
+  "readbook_login015": {
+    "url":"http://127.0.0.1:8000/login/",
+    "headers": {"Content-Type": "application/json"},
+    "data":{"account": "18518753270", "password": "123456"},
+    "expect_result": "用户登录成功",
+    "status_code":200
+  }
+}

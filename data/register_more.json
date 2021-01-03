@@ -1,0 +1,16 @@
+{
+  "readbook_register001":{
+    "url":"http://127.0.0.1:8000/register/",
+    "headers": {"Content-Type": "application/json"},
+    "data":{"account": "", "password": "", "brithday": ""},
+    "expect_result": {"birthday": ["This field is required."], "account": ["This field may not be blank."], "password": ["This field may not be blank."]},
+    "status_code":400
+  },
+  "readbook_register002":{
+    "url":"http://127.0.0.1:8000/register/",
+    "headers": {"Content-Type": "application/json"},
+    "data":{"account": "", "password": "123456", "birthday": "2020-06-04 23:13:00"},
+    "expect_result": {"account": ["This field may not be blank."], "password": ["密码不符合规范"]},
+    "status_code":400
+  }
+}
