@@ -7,7 +7,7 @@ class GlobalVar(object):
     MYSQL_HOST = "127.0.0.1"
     MYSQL_PORT= 6379
     MYSQL_USER="root"
-    MYSQL_PASSWPRD="12345678"
+    MYSQL_PASSWPRD="123456"
     MYSQL_DATABASE="readbook"
     MYSQL_CHARSET="utf8"
 
@@ -17,10 +17,10 @@ class GlobalVar(object):
     API_CASE_PATH = "./case/readbookcases.xlsx"
 
     # 发送邮件配置
-    EMAIL_SEND_USER = "2295808193@qq.com"
-    EMAIL_SEND_USERNAME = "小青年"
-    EMAIL_PASSWORD = "klnrulxakulmebdi"
+    EMAIL_SEND_USER = "xxxx@qq.com"
+    EMAIL_SEND_USERNAME = "xxx"
+    EMAIL_PASSWORD = "xxxx"
     EMAIL_HOST = "smtp.qq.com"
-    EMAIL_USERLIST = ["2295808193@qq.com", "ljhyigehaoren@sina.com"]
+    EMAIL_USERLIST = ["xxxx@qq.com", "xxxx@sina.com"]
     EMAIL_SUB = "readbook_api_auto_report"
 
