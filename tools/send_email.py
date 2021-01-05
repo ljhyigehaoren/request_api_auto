@@ -57,7 +57,6 @@ class SendEmail:
 
     def send_case_result_email(self,htmlrunner_path,pass_count,fail_count,sub=None,send_case_excel=False):
         print("正在发送测试用例结果...")
-        # "李居豪"<2295808193@qq.com>;
         self.send_user = GlobalVar.EMAIL_SEND_USER
         self.send_user_name = GlobalVar.EMAIL_SEND_USERNAME
         self.password = GlobalVar.EMAIL_PASSWORD
